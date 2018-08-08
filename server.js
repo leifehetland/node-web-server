@@ -2,6 +2,8 @@ const express = require('express');
 
 let app = express();
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req, res) => {
 	// res.send('<h1 style="color: blue; font-family: Roboto;">Hello Express.</h1>');
 	res.send({
@@ -16,8 +18,11 @@ app.get('/about', (req, res) => {
 
 app.get('/bad', (req, res) => {
 	res.send({
-		errorMessage: 'Unable to make request.'
+		errorMessage
+		: 'Unable to make request.'
 	});
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+	console.log('Server is up on port 3000.');
+});
