@@ -7,16 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leifehetland/node-web-server.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leifehetland/node-web-server/issues"
-  },
-  "homepage": "https://github.com/leifehetland/node-web-server#readme",
   "dependencies": {
     "express": "^4.16.3"
   }
