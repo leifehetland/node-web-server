@@ -60,5 +60,5 @@ app.get('/bad', (req, res) => {
 
 // Listen sets the port
 app.listen(port, () => {
-	console.log(`Server is up on port ${ port }.`);
+	console.log(`Server is up on port ${port}.`);
 });
